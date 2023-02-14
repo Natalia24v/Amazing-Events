@@ -1,0 +1,58 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+.bText {
+    font-size: 150px;
+    
+}
+
+.sectionF {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 30px;
+}
+.card-group {
+    margin-bottom: 150px;
+    margin-top: 70px;
+}
+
+form {
+    display: flex;
+    align-content: space-around;
+    margin-right: 20px;
+}
+
+label{
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+footer {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    
+}
+.aSocial{
+width: 50%;
+height: 50px;
+display:flex ;
+}
