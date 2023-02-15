@@ -4,12 +4,27 @@
     box-sizing: border-box;
     
 }
+main {
+    display: flex;
+}
 
 body {
     
      background: content-box radial-gradient(pink, rgb(247, 239, 243));
 }
 
+nav {
+    position: relative;
+}
+
+.aNav {
+    display: inline-block;
+    background-color: rgb(198, 2, 96);
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid black;
+    
+}
 
 .banner {
     display: flex;
@@ -52,9 +67,6 @@ label{
     border-color: crimson;
     border: 5px;
 }
-input {
-
-}
 
 div>img {
     height: 180px;
@@ -80,7 +92,7 @@ footer {
     justify-content: space-between;
     
 }
-.aSocial{
+div >.aSocial{
 width: 50%;
 height: 50px;
 display:flex ;
@@ -105,23 +117,67 @@ h2 {
 
 }
 
-.ver {
+div .ver {
     background-color: rgb(240, 130, 147);
     display: flex;
-    align-content: space-between;
+    align-items:center ;
+    padding: 7px;
+    border: 1px solid black;
 
 }
 
 table {
-    margin: 20px;
+    margin: 20px 10px;
     padding: 10px;
-    border: 5px;
+    border: 1px solid black;
     display: flex;
+    border-color: crimson;
+    color: darkred;
+    align-items: center;
+    justify-content: center;
 }
+
+
+
 td {
-    border: 2px;
+    border: 1px solid rgb(73, 2, 16);
+    padding: 15px 20px;
+    height: 30px;
 }
 tr {
-    border: 5px;
-    padding: 15px;
+    border: 1px solid rgb(73, 2, 16);
+    padding: 20px 10px;
+    
+    height: 40px;
 }
+.primTab{
+    background-color: rgb(240, 130, 147);
+    padding: 10px;
+    border: 1px solid rgb(73, 2, 16);
+}
+
+
+.detailsSec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin-top: 30px;
+    background-color: #f3a6b3;
+    
+    
+}
+
+.card2 {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    border: 5px;
+    background-color: #dc5269;
+}
+
