@@ -1,17 +1,27 @@
 * {
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
+    
 }
+
+body {
+    
+     background: content-box radial-gradient(pink, rgb(247, 239, 243));
+}
+
 
 .banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
+    background-color: rgb(176, 4, 87);
+    
 }
 .bText {
-    font-size: 150px;
-    
+    font-size: 120px;
+    color: aliceblue;
 }
 
 .sectionF {
@@ -23,8 +33,11 @@
     width: 30px;
 }
 .card-group {
+    display: flex;
     margin-bottom: 150px;
     margin-top: 70px;
+    padding: 10px;
+    align-content:space-between ;
 }
 
 form {
@@ -36,8 +49,24 @@ form {
 label{
     margin-right: 20px;
     margin-left: 10px;
+    border-color: crimson;
+    border: 5px;
+}
+input {
+
 }
 
+div>img {
+    height: 180px;
+}
+
+.card-group {
+    border: 20px;
+    background-color: pink;
+}
+.card-body {
+    background-color: #f3a6b3;
+}
 footer {
     display: flex;
     height: 50px;
@@ -55,4 +84,44 @@ footer {
 width: 50%;
 height: 50px;
 display:flex ;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.contactSect {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.btn {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    align-items: flex-end;
+    align-content: flex-end;
+
+}
+
+.ver {
+    background-color: rgb(240, 130, 147);
+    display: flex;
+    align-content: space-between;
+
+}
+
+table {
+    margin: 20px;
+    padding: 10px;
+    border: 5px;
+    display: flex;
+}
+td {
+    border: 2px;
+}
+tr {
+    border: 5px;
+    padding: 15px;
 }
