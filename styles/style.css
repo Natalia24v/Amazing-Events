@@ -195,7 +195,7 @@ td{
         display: flex;
         flex-direction: column;
     }
-    footer>img{
+    footer img{
         display: flex;
         height: 50px;
         width: 50px !important;
@@ -210,18 +210,44 @@ td{
     section{
         display: flex;
     }
+   
     div{
         display: flex;
         flex-direction: column;
     }
-    footer>img{
-        display: flex;
+    footer img{
+        display: flex !important;
+        justify-content: space-around;
         height: 50px;
-        width: 50px !important;
+        width: 50px ;
+        flex-direction: row !important;
     }
+    .card-group{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-body{
+        display:flex
+    }
+    .card{
+        display: flex;
+    }
+    
+    .card>img{
+        display: flex !important;
+         flex-direction: column !important;
+        flex-wrap: wrap !important;
+        
+    }
+.card-group>.card{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
 }
+    }
 
 @media only screen and (min-width: 1024px) and (max-width: 1339px) {
-
-
+*{
+display: flex;
+}
 }
