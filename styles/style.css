@@ -1,8 +1,7 @@
 * {
     padding: 0%;
-    margin: 0%;
+    margin: 0%;    
     box-sizing: border-box;
-    
 }
 main {
     display: flex;
@@ -14,16 +13,30 @@ body {
 }
 
 nav {
-    position: relative;
+    display: flex;
+    align-content: space-around;
+    margin: 5px 20px;
+    justify-content: flex-end;
+}
+.aContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
 }
 
 .aNav {
-    display: inline-block;
+    display: flex;
     background-color: rgb(198, 2, 96);
     color: white;
     padding: 5px 10px;
-    border: 1px solid rgb(138, 8, 34);
-    
+    border: 2px solid rgb(138, 8, 34);
+    margin: 10px;
 }
 
 .banner {
@@ -32,33 +45,33 @@ nav {
     justify-content: space-between;
     padding: 40px;
     background-color: rgb(176, 4, 87);
-    
+    height: 180px;
+}
+.banner img{
+    width: 50px;
 }
 .bText {
-    font-size: 120px;
+    font-size: 50px;
     color: aliceblue;
 }
 
 .sectionF {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+   
 }
 
 .search {
-    width: 30px;
+    width: 20px;
 }
-.card-group {
-    display: flex;
-    margin-bottom: 150px;
-    margin-top: 70px;
-    padding: 10px;
-    align-content:space-between ;
-}
+
 
 form {
     display: flex;
-    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-right: 20px;
+    font-size: 20px;
 }
 
 label{
@@ -67,22 +80,69 @@ label{
     border-color: crimson;
     border: 5px;
 }
+input{
+    flex-wrap: wrap;
+}
+
+.form-contr{
+width: 50px;
+height: 20px;
+}
 
 div>img {
     height: 180px;
 }
 
 .card-group {
+    display: flex;
+    margin-bottom: 150px;
+    margin-top: 70px;
+    padding: 10px;
     border: 20px;
-    background-color: pink;
+    background-color: pink; 
+    flex-wrap:wrap ;
 }
+
 .card-body {
     background-color: #f3a6b3;
+    display: flex;
+    flex-direction: column;
 }
+
+.cardSect{
+    display: flex;
+}
+
+.card {
+    margin:10px 40px;
+}
+
+div .ver {
+    background-color: rgb(240, 130, 147);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid rgb(228, 75, 106);
+    color: antiquewhite;
+    width: 100px;
+    margin-left: 90px;
+}
+
+.card-img-top{
+    padding: 10px;
+    background-color: #f3a6b3;
+}
+.footCard{
+    display: flex;
+    flex-direction: row;
+}
+
 footer {
     display: flex;
     height: 50px;
     justify-content: space-between;
+    align-content: center;
+    
 }
 
 .social {
@@ -90,7 +150,10 @@ footer {
     margin: 20px;
     padding: 10px;
     justify-content: space-between;
-    
+    width: 100px;
+}
+footer img{
+    width: 40px;
 }
 div >.aSocial{
 width: 50%;
@@ -117,16 +180,7 @@ h2 {
     
 }
 
-div .ver {
-    background-color: rgb(240, 130, 147);
-    display: flex;
-    align-items:center ;
-    justify-content: center;
-    padding: 7px;
-    border: 1px solid rgb(73, 2, 16);
-    color: antiquewhite;
-    width: 100px;
-}
+
 
 table{
     padding: 20px;
@@ -163,6 +217,7 @@ td{
 
 .detailsSec {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: 400px;
@@ -195,69 +250,83 @@ button {
     width: 100px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-    body{display: flex;
-    flex-direction: column;}
-    section{
-        display: flex;
-    }
-    div{
-        display: flex;
-        flex-direction: column;
-    }
-    footer img{
-        display: flex;
-        height: 50px;
-        width: 50px !important;
-    }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    body{
+    .navbar{
         display: flex;
-        flex-direction: column;
-    }
-    section{
-        display: flex;
-    }
-   
-    div{
-        display: flex;
-        flex-direction: column;
-    }
-    footer img{
-        display: flex !important;
+        flex-wrap: nowrap !important;
         justify-content: space-around;
-        height: 50px;
-        width: 50px ;
-        flex-direction: row !important;
     }
-    .card-group{
-        display: flex;
-        flex-direction: column;
-    }
-    .card-body{
-        display:flex
-    }
-    .card{
-        display: flex;
+    .logo {
+        margin-right: 70px;
     }
     
-    .card>img{
-        display: flex !important;
-         flex-direction: column !important;
-        flex-wrap: wrap !important;
-        
+    .dflex {
+        height: 40px !important;
+        margin-top: 20px;
+        margin-right: 10px;
+        padding: 5px !important;
+         flex-wrap: nowrap;
     }
-.card-group>.card{
-    display: flex;
-    flex-wrap: wrap-reverse;
     
-}
+    .btnSuccess{
+        margin-left: 10px;
+
     }
 
-@media only screen and (min-width: 1024px) and (max-width: 1339px) {
-*{
-display: flex;
+    .card-body {
+        height: 300px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cardSect{
+        display: flex;
+    }
+    
+    .card {
+        width: 300px; 
+        margin: 10px 20px;
+    }
+    
+    .card-img-top{
+        width: 200px !important;
+    }
+
+    div .ver {
+        display: flex;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    
+    .card-img-top{
+        padding: 10px;
+    }
+    .footCard{
+        display: flex;
+        flex-direction: row;
+    }
 }
-}
+    @media only screen and (min-width: 1024px){
+        nav{
+            display: block !important;
+        }
+        form{
+            flex-wrap: nowrap;
+        }
+        .sectionF{
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+        .dflex {
+            height: 40px !important;
+            padding: 5px !important;
+            flex-wrap: nowrap;
+        }
+        
+        .btnSuccess{
+            margin-left: 10px;
+    
+        }
+    }
