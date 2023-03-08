@@ -136,7 +136,13 @@ div .ver {
     display: flex;
     flex-direction: row;
 }
-
+.card-group .card{
+            
+    flex-basis: auto!important;
+}
+.card-group>.card+.card {
+    margin-left: 25px!important;
+}
 footer {
     display: flex;
     height: 50px;
@@ -272,25 +278,21 @@ button {
         margin-left: 10px;
 
     }
-
+   
     .card-body {
-        height: 300px;
-        width: 200px;
+        
         display: flex;
         flex-direction: column;
     }
     
-    .cardSect{
-        display: flex;
-    }
-    
     .card {
-        width: 300px; 
+       
         margin: 10px 20px;
     }
     
     .card-img-top{
-        width: 200px !important;
+    
+        padding: 10px;
     }
 
     div .ver {
@@ -298,10 +300,7 @@ button {
         padding: 10px;
         margin-left: 20px;
     }
-    
-    .card-img-top{
-        padding: 10px;
-    }
+   
     .footCard{
         display: flex;
         flex-direction: row;
@@ -329,4 +328,12 @@ button {
             margin-left: 10px;
     
         }
+
+
+        .card-group{
+             flex-wrap: wrap;
+        }
+
+       
+       
     }
